@@ -11,7 +11,7 @@ func benchmark_ab() {
 	var root utils.Node
 	grid := utils.MakeGrid()
 	root.Grid = grid
-	root.NextTurn = 11
+	root.NextTurn = 1
 	root.Depth = 0
 	start := time.Now()
 	root.Value = algo.MiniMax_AlphaBeta(&root, -utils.INF, utils.INF)
